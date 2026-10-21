@@ -1,0 +1,135 @@
+body {
+    margin: 40px;
+    font-family: Arial, sans-serif;
+    color: #7f888f;
+    background-color: white;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #3d4449;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 3px solid #f56a6a;
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 1.6em;
+    color: #3d4449;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 30px;
+    color: #3d4449;
+    text-decoration: none;
+}
+
+nav a.active {
+    color: #f56a6a;
+}
+.banner {
+    margin-top: 45px;
+}
+
+.intro h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    text-transform: uppercase;
+}
+
+.intro p {
+    max-width: 700px;
+}
+
+.intro {
+    padding-bottom: 40px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.button {
+    display: inline-block;
+    padding: 8px 18px;
+    border: 2px solid #f56a6a;
+    border-radius: 4px;
+    color: #f56a6a;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+h2, .section-title {
+    display: inline-block;
+    margin-top: 40px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid #f56a6a;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px 60px;
+    margin-top: 30px;
+}
+
+.feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 60px;
+    text-align: center;
+    font-size: 2.5em;
+    line-height: 1;
+    color: #f56a6a;
+}
+
+.feature h3 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.feature p {
+    margin: 0;
+}
+.projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.projects h3 {
+    margin: 18px 0 6px;
+}
+
+.projects p {
+    margin: 0 0 16px;
+}
+
+@media (max-width: 650px) {
+    .features,
+    .projects {
+        grid-template-columns: 1fr;
+    }
+}
+footer {
+    margin: 60px;
+    font-size: 0.85em;
+}
